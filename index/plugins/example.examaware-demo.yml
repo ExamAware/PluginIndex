@@ -1,0 +1,25 @@
+id: examaware-demo
+package: '@dsz-examaware/plugin-demo'
+displayName: ExamAware Demo Plugin
+description: 示例插件，展示 main/renderer 入口和设置页。
+authors:
+- name: ExamAware Team
+  link: https://github.com/ExamAware
+repository: https://github.com/ExamAware/ExamAware2
+license: MIT
+icon: https://raw.githubusercontent.com/ExamAware/ExamAware2/main/image/README/icon.png
+latestVersion: 0.1.1
+versions:
+- version: 0.1.1
+  desktopCompat: '>=0.0.0'
+  sdkCompat: '>=0.0.0'
+  targets:
+  - main
+  dist:
+    npm: '@dsz-examaware/plugin-demo'
+    tag: 0.1.1
+    registry: https://registry.npmjs.org
+    integrity: sha512-JwV4mvfByWubmDKpnmL1hM3Re2fFWHXIhAXETng/QJkebsjaGt6+sN6JWGVaVm6xR0xVxOpCCGTc7aEXU5Od5Q==
+    shasum: 05da868aae6a63bef085e3a78c31d65cc260cab7
+    tarball: https://registry.npmjs.org/@dsz-examaware/plugin-demo/-/plugin-demo-0.1.1.tgz
+  readme: README.md

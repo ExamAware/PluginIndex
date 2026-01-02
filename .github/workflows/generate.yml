@@ -1,0 +1,59 @@
+name: Generate Index
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'index/**'
+      - 'tools/**'
+      - '.github/workflows/generate.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'index/**'
+      - 'tools/**'
+      - '.github/workflows/generate.yml'
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install python deps
+        run: pip install -r tools/requirements.txt
+
+      - name: Refresh manifests from npm
+        run: python tools/fetch_npm.py
+
+      - name: Generate index
+        run: python tools/generate_index.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-index
+          path: |
+            index/index.json
+
+      - name: Commit & push (main only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git status --short
+          if [ -n "$(git status --porcelain)" ]; then
+            git add index/index.json || true
+            git commit -m "chore: update generated index"
+            git push
+          fi
