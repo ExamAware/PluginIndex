@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-01-02T14:12:06.193356+00:00",
+  "generatedAt": "2026-07-30T10:31:02.845765+00:00",
   "plugins": [
     {
       "id": "examaware-demo",
@@ -37,6 +37,42 @@
         }
       ],
       "__source": "index/plugins/example.examaware-demo.yml"
+    },
+    {
+      "id": "ringtone-factory",
+      "package": "@dsz-examaware/ringtone-factory",
+      "displayName": "铃声工厂",
+      "description": "铃声工厂。可以制作 .ea2r 铃声包文件",
+      "authors": [
+        {
+          "name": "ExamAware Team",
+          "link": "https://github.com/ExamAware"
+        }
+      ],
+      "repository": "https://github.com/ExamAware/ExamAware2",
+      "license": "MIT",
+      "icon": "https://raw.githubusercontent.com/ExamAware/ExamAware2/main/image/README/icon.png",
+      "latestVersion": "1.0.1",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "desktopCompat": ">=0.0.0",
+          "sdkCompat": ">=0.0.0",
+          "targets": [
+            "main"
+          ],
+          "dist": {
+            "npm": "@dsz-examaware/ringtone-factory",
+            "tag": "1.0.1",
+            "registry": "https://registry.npmjs.org",
+            "integrity": "sha512-U3VI3iDD2/UNVi+8hhMdqXQf4w9VPDWZ23//ocsWKz66ASZgM8XiethyKdEF4ha0VzzXW3xbuDHVyV4BGhon3Q==",
+            "shasum": "b4fbcb0630f102985e992391df70d4635c7977a8",
+            "tarball": "https://registry.npmjs.org/@dsz-examaware/ringtone-factory/-/ringtone-factory-1.0.1.tgz"
+          },
+          "readme": "README.md"
+        }
+      ],
+      "__source": "index/plugins/ringtone-factory.yml"
     }
   ]
 }
