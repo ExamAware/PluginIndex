@@ -17,6 +17,9 @@ on:
     - cron: '0 3 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -47,13 +50,14 @@ jobs:
             index/index.json
 
       - name: Commit & push (main only)
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git status --short
-          if [ -n "$(git status --porcelain)" ]; then
-            git add index/index.json || true
+          git add index/index.json index/plugins
+          if ! git diff --cached --quiet; then
             git commit -m "chore: update generated index"
             git push
+          else
+            echo "No generated changes to commit"
           fi
