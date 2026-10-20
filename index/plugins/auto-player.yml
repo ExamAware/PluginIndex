@@ -1,0 +1,25 @@
+id: auto-player
+package: examaware-auto-player
+displayName: 自动放映
+description: 接收 ClassIsland 推来的考试安排，考前自动全屏放映，考后自动退出。
+authors:
+- name: 1duye
+  link: https://github.com/1duye
+repository: https://github.com/1duye/examaware-auto-player
+license: GPL-3.0-only
+icon: https://raw.githubusercontent.com/1duye/examaware-auto-player/main/icon.png
+latestVersion: 0.2.1
+versions:
+- version: 0.2.1
+  desktopCompat: ">=1.5.0"
+  sdkCompat: ">=1.5.0"
+  targets:
+  - main
+  dist:
+    npm: examaware-auto-player
+    tag: 0.2.1
+    registry: https://registry.npmjs.org
+    integrity: sha512-UU5XXM3eAA5OSj591oo9hdOfzHD3NBw35gOjQ1kTt1mkucD02ccTB3EuQQVKvXDQgHzO8Ugu8C5zRhZDaxT1pg==
+    shasum: 814122abdcc4193690934c8375b1969c06a70dd2
+    tarball: https://registry.npmjs.org/examaware-auto-player/-/examaware-auto-player-0.2.1.tgz
+  readme: README.md
