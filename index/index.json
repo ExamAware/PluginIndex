@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-11-08T00:59:55.549011+00:00",
+  "generatedAt": "2026-11-08T01:38:04.889071+00:00",
   "plugins": [
     {
       "id": "baozhong-exam-clock-theme",
-      "package": "\"@dsz-examaware/plugin-baozhong-exam-clock",
+      "package": "@dsz-examaware/plugin-baozhong-exam-clock",
       "displayName": "宝中考试时钟主题插件",
       "description": "移植自宝中考试时钟的主题",
       "authors": [
@@ -16,6 +16,26 @@
       "repository": "https://github.com/ExamAware/ExamAware2",
       "license": "GPL-3.0-only",
       "icon": "https://raw.githubusercontent.com/ExamAware/ExamAware2/main/image/README/icon.png",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "desktopCompat": ">=0.0.0",
+          "sdkCompat": ">=0.0.0",
+          "targets": [
+            "main"
+          ],
+          "dist": {
+            "npm": "@dsz-examaware/plugin-baozhong-exam-clock",
+            "tag": "0.1.0",
+            "registry": "https://registry.npmjs.org",
+            "integrity": "sha512-V1DB8y3+SrlQzpTrvyijzvyiDETVZ0+7GGc2BZ5fyOwTzZxYuR+zfktVIWDZEootudNZnj2IuFg03EeSp8v8rw==",
+            "shasum": "033fd8ef1e0087334db01296266895c068dbef16",
+            "tarball": "https://registry.npmjs.org/@dsz-examaware/plugin-baozhong-exam-clock/-/plugin-baozhong-exam-clock-0.1.0.tgz"
+          },
+          "readme": "README.md"
+        }
+      ],
       "__source": "index/plugins/baozhong-exam-clock-theme.yaml"
     },
     {

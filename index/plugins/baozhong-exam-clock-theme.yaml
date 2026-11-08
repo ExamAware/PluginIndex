@@ -8,3 +8,18 @@ authors:
 repository: https://github.com/ExamAware/ExamAware2
 license: GPL-3.0-only
 icon: https://raw.githubusercontent.com/ExamAware/ExamAware2/main/image/README/icon.png
+latestVersion: 0.1.0
+versions:
+- version: 0.1.0
+  desktopCompat: '>=0.0.0'
+  sdkCompat: '>=0.0.0'
+  targets:
+  - main
+  dist:
+    npm: '@dsz-examaware/plugin-baozhong-exam-clock'
+    tag: 0.1.0
+    registry: https://registry.npmjs.org
+    integrity: sha512-V1DB8y3+SrlQzpTrvyijzvyiDETVZ0+7GGc2BZ5fyOwTzZxYuR+zfktVIWDZEootudNZnj2IuFg03EeSp8v8rw==
+    shasum: 033fd8ef1e0087334db01296266895c068dbef16
+    tarball: https://registry.npmjs.org/@dsz-examaware/plugin-baozhong-exam-clock/-/plugin-baozhong-exam-clock-0.1.0.tgz
+  readme: README.md
