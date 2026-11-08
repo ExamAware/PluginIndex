@@ -1,0 +1,10 @@
+id: baozhong-exam-clock-theme
+package: '"@dsz-examaware/plugin-baozhong-exam-clock'
+displayName: 宝中考试时钟主题插件
+description: 移植自宝中考试时钟的主题
+authors:
+- name: ExamAware Team
+  link: https://github.com/ExamAware
+repository: https://github.com/ExamAware/ExamAware2
+license: GPL-3.0-only
+icon: https://raw.githubusercontent.com/ExamAware/ExamAware2/main/image/README/icon.png
