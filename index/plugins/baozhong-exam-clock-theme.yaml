@@ -1,5 +1,5 @@
 id: baozhong-exam-clock-theme
-package: '"@dsz-examaware/plugin-baozhong-exam-clock'
+package: @dsz-examaware/plugin-baozhong-exam-clock
 displayName: 宝中考试时钟主题插件
 description: 移植自宝中考试时钟的主题
 authors:
