@@ -11,8 +11,8 @@ icon: https://raw.githubusercontent.com/1duye/examaware-auto-player/main/icon.pn
 latestVersion: 0.2.1
 versions:
 - version: 0.2.1
-  desktopCompat: ">=1.5.0"
-  sdkCompat: ">=1.5.0"
+  desktopCompat: '>=0.0.0'
+  sdkCompat: '>=0.0.0'
   targets:
   - main
   dist:
