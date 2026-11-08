@@ -1,7 +1,23 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-11-07T09:24:39.740401+00:00",
+  "generatedAt": "2026-11-08T00:59:55.549011+00:00",
   "plugins": [
+    {
+      "id": "baozhong-exam-clock-theme",
+      "package": "\"@dsz-examaware/plugin-baozhong-exam-clock",
+      "displayName": "宝中考试时钟主题插件",
+      "description": "移植自宝中考试时钟的主题",
+      "authors": [
+        {
+          "name": "ExamAware Team",
+          "link": "https://github.com/ExamAware"
+        }
+      ],
+      "repository": "https://github.com/ExamAware/ExamAware2",
+      "license": "GPL-3.0-only",
+      "icon": "https://raw.githubusercontent.com/ExamAware/ExamAware2/main/image/README/icon.png",
+      "__source": "index/plugins/baozhong-exam-clock-theme.yaml"
+    },
     {
       "id": "examaware-demo",
       "package": "@dsz-examaware/plugin-demo",
@@ -50,7 +66,7 @@
         }
       ],
       "repository": "https://github.com/ExamAware/ExamAware2",
-      "license": "MIT",
+      "license": "GPL-3.0-only",
       "icon": "https://raw.githubusercontent.com/ExamAware/ExamAware2/main/image/README/icon.png",
       "latestVersion": "1.0.1",
       "versions": [
